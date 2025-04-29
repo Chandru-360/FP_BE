@@ -50,11 +50,12 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
+        <!-- Comment out if you don't need the test dependencies -->
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
@@ -107,6 +108,7 @@
         </plugins>
     </build>
 
+    <!-- Profile for coverage -->
     <profiles>
         <profile>
             <id>coverage</id>
